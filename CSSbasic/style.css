@@ -1,0 +1,58 @@
+/* basic selector */
+/* p {
+  color: red;
+}
+/* id take more priority over class */
+/* #fifth {
+  color: purple;
+}
+.pg {
+  color: black;
+} */
+/* descendant (space)  */
+section p {
+  color: green;
+}
+/* child(>) all between the element*/
+section > p {
+  color: purple;
+}
+/* adjacent(+) one line after the element*/
+section + div {
+  color: maroon;
+}
+/* sibling(~) all element after the element*/
+section ~ div {
+  color: aqua;
+}
+section div p {
+  font-size: 30px;
+}
+
+/* attribute selector */
+[href] {
+  text-decoration: none;
+  color: red;
+}
+[href="contact.html"] {
+  background: blue;
+}
+a[href] {
+  text-decoration: line-through;
+  color: pink;
+}
+/* pseudo attribute selector */
+p::first-letter {
+  color: cyan;
+}
+p::first-line {
+  color: black;
+}
+/* pseudo class selector */
+a:hover {
+  font-size: 40px;
+}
+
+p:nth-child(even) {
+  color: chartreuse;
+}
